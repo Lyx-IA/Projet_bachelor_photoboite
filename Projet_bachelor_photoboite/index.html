@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- déscription -->
+  <meta name="description" content="Javascript Photo Booth App">
+  <!-- keywords -->
+  <meta name="keywords" content="Photo Booth">
+  <!-- icône -->
+  <link rel='icon' href='libs/img/js.png' type='image/x-icon'>
+  <!-- font -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Photobooth</title>
+</head>
+<body>
+  <div class='containerOne'>
+    <div class='containerTwo'>
+
+    <!-- header -->
+    <div class='header'>
+      <h5>Photo Booth</h5>
+    </div>
+
+    <div class="navOptions">
+      <div class='navs'>
+        <button type="button" class="btn normal">Normal</button>
+      </div>
+      <div class='navs'>
+        <button type="button" class="btn negative">Negatif</button>
+      </div>
+      <div class='navs navInput'>
+        <div>Customisation</div>
+        <div class='inputRange'>
+          <label for="rmin">R </label>
+          <input type="range" min=0 max=255 class='input red'>
+        </div>
+        <div class="inputRange">
+          <label for="rmin">V</label>
+          <input type="range" min=0 max=255 class='input green'>
+        </div>
+        <div class="inputRange">
+          <label for="rmin">B</label>
+          <input type="range" min=0 max=255 class='input blue'>
+        </div>
+      </div>
+    </div>
+
+
+    <div class=''>
+      <div class="counter"></div>     
+      <video class="video"></video>
+      <canvas class='canvas' width="640" height="480"></canvas>
+    </div>
+
+    <div class='shots'>
+      <button type="button" class="takePhoto">Prendre la photo</button>
+      <div class="shotsTaken">
+        <div class='image'>Photo 1</div>
+        <div class='image'>Photo 2</div>
+        <div class='image'>Photo 3</div>
+        <div class='image'>Photo 4</div>
+        <div class='image'>Photo 5</div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+  </div>
+  <audio class='snap' src='/libs/audio/snap.mp3' hidden></audio>
+
+</body>
+<script src='js/script.js'></script>
+</html>
+
